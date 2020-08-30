@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>REGISTRATION PAGE</title>
+    <style>
+    header{
+      padding-bottom:5%;
+      margin-left: 9px;
+      margin-right: 9px;
+    }
+      nav {
+        color: white;
+        background-color: rgb(10,10,10);
+        list-style-type: none;
+        text-align: left;
+        position: relative;
+        margin-bottom: 4%;
+      }
+
+      nav li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 18px;
+      }
+
+      nav li a {
+        color: rgb(230, 230, 230);
+        text-decoration: none;
+      }
+
+      a:hover{
+        border: 1px solid white;
+      }
+
+      .register{
+        font-size: 150%;
+        font-weight: bold;
+      }
+
+      table, td, tr{
+        padding: 10px 30px 10px 30px;
+        text-align: center;
+      }
+
+      input[type=text], input[type=email], input[type=phone]{
+          border-radius: 4px;
+          height: 25px;
+          width: 300px;
+        }
+      input[type=submit], input[type=reset]{
+            border-radius: 6px;
+            height: 35px;
+            width: 100px;
+        }
+</style>
+  </head>
+  <body>
+    <header>
+      <a href="https://www.iiit.ac.in/"><img src="https://www.iiit.ac.in/img/iiit-new.png" alt="IIIT logo" style="float:left; height:6%; width:9%"></a>
+      <a href="https://serc.iiit.ac.in/rdip" style="font-size:200%; float:right;"><strong>RDIP</strong></a>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="registration.html">Registration Form</a></li>
+      </ul>
+    </nav>
+
+    <form class="register" action="details.html" method="GET">
+      <table>
+        <tr>
+          <td>First name:</td>
+          <td><input type="text" name="firstname" required><td>
+        </tr>
+
+        <tr>
+          <td>E-mail:</td>
+          <td><input type="email" name="email" required></td>
+        </tr>
+
+        <tr>
+          <td>Phone No:</td>
+          <td><input type="Phone" name="phoneno" required></td>
+        </tr>
+
+        <tr>
+          <td>Gender:</td>
+          <td><input type="radio" name="gender" required> Male <input type="radio" name="gender"> Female <input type="radio" name="gender"> Other </td>
+        </tr>
+
+        <tr>
+          <td>Reason for RDIP:</td>
+          <td><input type="checkbox" name="reason" required> HTML <input type="checkbox" name="reason"> CSS <input type="checkbox" name="reason"> JavaScript</td>
+        </tr>
+
+        <tr>
+          <td>College:</td>
+          <td> <input type="text" name="college" required></td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" name="declaration" required></td>
+          <td>I declare above details given by me are true.</td>
+        </tr>
+
+        <tr>
+          <td><input type="submit" name="submit" value="Submit"></td>
+          <td><input type="reset" name="reset" value="Reset"></td>
+        </tr>
+      </table>
+    </form>
+
+  </body>
+</html>
